@@ -1,0 +1,181 @@
+\documentclass{article}
+
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{amsmath,amssymb}
+
+\include{vc}
+
+\pagestyle{empty}
+
+\baselineskip 18pt
+\textwidth 6.25in
+\textheight 8.5in
+\oddsidemargin 0.1in
+\evensidemargin 0.1in
+\marginparwidth 0in
+\marginparsep 0in
+\topmargin -.5in
+\topskip -.5in
+\parindent 0in
+\parskip 1pt
+
+\begin{document}
+
+\begin{center}
+  \LARGE{\scshape{AST3100: Code development and packaging mini-course}}\\[5pt]
+  \Large{\scshape{Winter 2020}}\\[5pt]
+  \large{(last updated: \today; rev. \githash)}\\[25pt]
+\end{center}
+
+\section*{Course description}
+
+This graduate-level mini-course provides an overview of the steps
+involved in developing, publishing, and maintaining a scientific
+software package. The course focuses on current best practices and the
+different tools available to build, release, and maintain a software
+package. The course will involve students building their own small
+software package, learning how to use git/GitHub to host it, how to
+test and document it, how to use automatic
+documentation/building/testing tools, how to release the package, and
+how to deal with issues and pull requests.
+
+\section*{Logistics}
+
+\begin{itemize}
+
+  \item {\bf Meeting time / place:} Tue, 10:30--12:30pm, Room: AB
+    113\\\\\emph{Sessions will typically consist of about a
+      half-hour/hour of lecture/discussion and in-class work for the
+      remainder of the session}
+
+  \item {\bf Instructor:} Jo Bovy, AB 229.
+
+  \item {\bf Email:} \href{mailto:jo.bovy@utoronto.ca}{jo.bovy@utoronto.ca}
+
+  \item {\bf Office hours:} Stop by my office or by appointment.
+
+  \item {\bf Course website:} \url{https://github.com/jobovy/code-packaging-minicourse}.
+
+\end{itemize}
+
+\section*{Learning objectives}
+
+After this course you should understand
+
+\begin{itemize}
+
+  \item the dos and don'ts of package development
+
+  \item how to setup a Python package structure that can be easily installed
+
+  \item version control with git, hosting code on GitHub
+
+  \item how to document your code using sphinx
+
+  \item how to write a good test and how to run a test suite with pytest
+
+  \item test code coverage and how to measure it
+
+  \item code licenses
+
+  \item how to use travis to build and test your code
+
+  \item how to use readthedocs to host documentation
+ 
+  \item how to release your code to PyPI (\texttt{pip install X})
+
+  \item how to write, compile, and use a C extension in your Python code
+
+  \item the basics of GitHub workflows
+
+  \item how to get nifty badges for your GitHub site
+
+\end{itemize}
+
+\section*{Reading}
+
+A set of lecture notes will be posted on the course website throughout
+ the semester.
+
+\section*{Grading scheme}
+
+As part of this course, students will develop a small package in four
+steps (one for each of the first four lectures); each of these steps
+will be worth 25\% of the final mark.
+
+\begin{itemize}
+
+  \item {\bf Assignment 1:} Set up a basic package and put it on your GitHub page
+
+  \item {\bf Assignment 2:} Set up and write documentation for your package and publish it to \texttt{readthedocs.io}.
+
+  \item {\bf Assignment 3:} Write a test suite for your code, set it
+    up to run on \texttt{travis}, send code-coverage results to
+    \texttt{codecov}.
+
+  \item {\bf Assignment 4:} Release your code to PyPI, add nifty
+    badges to your GitHub page.
+
+\end{itemize}
+
+More information on these assignments will be given in class.
+
+\section*{Schedule}
+
+\begin{itemize}
+
+  \item {\bf Week 1:} Class logistics; Introduction, git/GitHub,
+    basics of Python packages, code licensing, issues and pull
+    requests.
+
+  \item {\bf Week 2:} Documentation: Sphinx, readthedocs
+
+  \item {\bf Week 3:} Code testing, using pytest as a test runner,
+    running your tests on travis, code coverage
+
+  \item {\bf Week 4:} Releasing your code to PyPI (\texttt{pip install
+    X}), get nifty badges for your GitHub site
+
+  \item {\bf Week 5:} Advanced topics: C extensions, GitHub workflows, \ldots
+
+\end{itemize}
+
+\section*{Academic integrity}
+
+From Appendix D of the Academic Integrity Handbook:
+\begin{quote}
+  Academic integrity is one of the cornerstones of the University of
+  Toronto. It is critically important both to maintain our community
+  which honours the values of honesty, trust, respect, fairness, and
+  responsibility and to protect you, the students within this
+  community, and the value of the degree towards which you are all
+  working so diligently.  
+
+  According to Section B of the University of
+  Toronto's Code of Behaviour on Academic Matter
+  (\url{http://www.governingcouncil.utoronto.ca/policies/behaveac.htm})
+  which all students are expected to read and by which they are
+  expected to abide, it is an offence for students to:
+  \begin{itemize}
+    \item Use someone else's ideas or words in their own work without
+      acknowledging explicitly that those ideas/words are not their
+      own with a citation and quotation marks, i.e. to commit
+      plagiarism.
+  \item Include false, misleading, or concocted citations in their
+    work.
+  \item Obtain unauthorized assistance on any assignment. 
+  \item Provide unauthorized assistance to another students. This
+    includes showing another student your own work.
+  \item Submit their own work for credit in more than one course
+      without the permission of the instructors.
+  \end{itemize}
+
+  There are other offenses covered under the Code, but these are the
+  most common. You are instructed to respect these rules and the
+  values that they protect.
+\end{quote}
+
+\end{document}
+
