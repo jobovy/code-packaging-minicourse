@@ -6,7 +6,7 @@
 Code development and packaging
 ==============================
 
-By Jo Bovy
+By `Jo Bovy <http://astro.utoronto.ca/~bovy>`__
 
 (rev. |gitHash|)
 
