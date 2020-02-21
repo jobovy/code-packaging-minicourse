@@ -1,0 +1,13 @@
+{% extends "!layout.html" %}
+{%- block haikuheader %}
+        {%- if theme_full_logo != "false" %}
+        <a href="{{ pathto('index') }}">
+          <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
+        </a>
+        {%- else %}
+        {%- if logo -%}
+          <img class="rightlogo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
+        {%- endif -%}
+        <h1 class="heading"><span>{{ title|striptags|e }}</span></h1>
+        {%- endif %}
+{%- endblock %}
