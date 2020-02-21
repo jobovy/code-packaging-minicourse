@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Bovy adds
+*~
+# LaTeX
+*.aux
+*.out
+# Version string
+vc.tex
+vc.aux
