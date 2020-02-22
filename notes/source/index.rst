@@ -8,7 +8,7 @@ Code development and packaging
 
 By `Jo Bovy <http://astro.utoronto.ca/~bovy>`__
 
-(rev. |gitHash|)
+(last updated |today|; rev. |gitHash|)
 
 This is a brief set of notes with an overview of the steps involved in
 developing, publishing, and maintaining a scientific software
