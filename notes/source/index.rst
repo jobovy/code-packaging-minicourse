@@ -16,6 +16,8 @@ package. The notes focuses on current best practices and the different
 tools available to build, release, and maintain a scientific software
 package.
 
+A PDF version of these notes is available :pdf_link:`here <>`.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
