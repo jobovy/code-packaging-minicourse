@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\begin{document}
+\begin{center}
+{\bf \LARGE AST3100 ``Code development and packaging mini-course'' Assignment 1}\\[7pt]
+\emph{Due on Mar. 3 2020  at the start of class}\\[7pt]
+\end{center}
+
+The purpose of this first assignment is to start developing the Python
+package that you will create as part of this course and to play around
+with \texttt{git} and GitHub. To submit the assignment, please send a
+link to your package's GitHub page to the instructor and he will
+monitor your progress there (he will be looking for lots of commits
+\ldots).\\
+
+\noindent{\bf Task 1: Create your package} Following the notes, create
+the absolute basic skeleton of your package: (a) choose a name; (b)
+the start of your package's code (but only a very basic start, we will
+add the rest later; so something like a single file and a single,
+small function); (c) a basic \texttt{setup.py} file. Test that you can
+install your code by running\\
+
+\texttt{python setup.py develop}\\
+
+\noindent Don't add \texttt{README} or \texttt{LICENSE} files at this point, we
+will do that in the next step.\\
+
+\noindent{\bf Task 2: Start your package's GitHub page} Go to your
+GitHub account and create a new repository for your package, making
+sure to initialize it with a \texttt{README.md}, a \texttt{.gitignore}
+file, and a license.\\
+
+\noindent{\bf Task 3: Start the \texttt{git} commit history for your
+  package} Clone your package's GitHub repository to your local
+machine (use a different directory from where you started the
+package). Copy the skeleton that you created in Task 1 to this
+directory and add and commit the skeleton that you created earlier,
+keeping to the \texttt{git} philosophy of committing early and
+often. When you have done this, push the changes to GitHub; check that
+they appear correctly there.\\
+
+\noindent{\bf Task 4: Implement a first feature in your package} Now
+you should implement a first full-fledged feature in your package,
+some of its basic functionality. Start a new branch with a good name
+for the feature and start implementing it, committing liberally along
+the way. Make sure to add a bug somewhere along the way for the next
+task. Push your changes to GitHub from time to time. When the feature
+is finished, merge it into the \texttt{master} branch from the
+command-line.\\
+
+\noindent{\bf Task 5: Open an issue on GitHub} The feature that you
+implemented in the previous task has a bug. Pretend that you just
+found it and open an Issue on the GitHub page describing the issue as
+discussed in the notes.\\
+
+\noindent{\bf Task 6: Fix the issue through a pull request} Next, fix
+the bug reported in the previous task. Start a new branch to fix the
+bug and fix it (referring to the issue by its number as \texttt{\#1} in
+each commit). Once the bug has been fixed, open a pull request to
+merge the fix back into the \texttt{master} branch.
+
+\end{document}
