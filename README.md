@@ -35,7 +35,7 @@ A set of lecture notes will be sent to students taking the class by email; these
 
 ## Lecture slides
 
-* **Week 1**: TBP
+* **Week 1**: [slides](http://astro.utoronto.ca/~bovy/codepackagingminicourse/L1-codingmini.pdf)
 
 ## Code package examples
 
