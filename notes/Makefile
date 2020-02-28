@@ -25,3 +25,6 @@ latexpdf: Makefile
 	mkdir -p build/html/pdf
 	rm -f build/html/pdf/code-packaging-*.pdf
 	cp build/latex/code-packaging-minicourse.pdf build/html/pdf/code-packaging-rev"$(shell python get_git_hash.py)".pdf
+
+purehtml: Makefile
+	@$(SPHINXBUILD) -M $(subst pure,,$@) "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
