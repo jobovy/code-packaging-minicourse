@@ -42,7 +42,7 @@ rst_epilog = """
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['nbsphinx',"sphinx.ext.extlinks"]
+extensions = ['nbsphinx',"sphinx.ext.extlinks","sphinx_copybutton"]
 
 # Link to PDF version that includs the git hash
 extlinks = {'pdf_link': ('pdf/code-packaging-rev{}.pdf'.format(git_hash),
