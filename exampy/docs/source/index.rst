@@ -10,7 +10,8 @@ Welcome to exampy's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   installation.rst
+   intro.rst
 
 Indices and tables
 ==================
