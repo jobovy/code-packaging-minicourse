@@ -29,3 +29,30 @@ float
     x^p
 """
     return x**p
+
+class PowClass(object):
+    """A class to compute the power of a number"""
+    def __init__(self,p=2.):
+        """Initialize a PowClass instance
+
+Parameters
+----------
+p: float, optional
+    Power to raise x to
+"""
+        self._p= p
+
+    def __call__(self,x):
+        """Evaluate x^p
+
+Parameters
+----------
+x: float
+    Number to raise to the power p
+
+Returns
+-------
+float
+    x^p
+"""
+        return x**self._p
