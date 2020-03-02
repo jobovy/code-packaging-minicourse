@@ -12,6 +12,7 @@ Welcome to exampy's documentation!
 
    installation.rst
    intro.rst
+   reference.rst
 
 Indices and tables
 ==================
