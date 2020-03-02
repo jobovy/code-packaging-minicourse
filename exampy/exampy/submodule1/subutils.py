@@ -31,13 +31,15 @@ Implements the standard cube function
 
 .. math:: f(x) = x^3
 
+History:
+
+2020-03-01: First implementation - Bovy (UofT)
+
+
 References
 ----------
 .. [1] A. Mathematician, "x to the p-th power: squares, cubes, and their 
    general form," J. Basic Math., vol. 2, pp. 2-3, 1864.
 
-History
--------
-2020-03-01: First implementation - Bovy (UofT)
 """
     return x**3
