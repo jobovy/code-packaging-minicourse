@@ -8,6 +8,11 @@ API reference
 
 .. autofunction:: exampy.pow
 
+.. autoclass:: exampy.PowClass
+   :members: __init__
+
+.. automethod:: exampy.PowClass.__call__
+
 ``exampy.submodule1``
 ---------------------
 
