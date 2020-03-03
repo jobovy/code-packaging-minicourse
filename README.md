@@ -23,7 +23,7 @@ Materials related to the graduate mini-course on code development and packaging 
 
 * **Assignment 1**: available [here](assignments/assignment1.pdf), due on Mar. 3
 
-* **Assignment 2**: TBP
+* **Assignment 2**: available [here](assignments/assignment2.pdf), due on Mar. 10
 
 * **Assignment 3**: TBP
 
@@ -36,6 +36,8 @@ A set of lecture notes will be sent to students taking the class by email; these
 ## Lecture slides
 
 * **Week 1**: [slides](http://astro.utoronto.ca/~bovy/codepackagingminicourse/L1-codingmini.pdf)
+
+* **Week 2**: [slides](http://astro.utoronto.ca/~bovy/codepackagingminicourse/L2-codingmini.pdf)
 
 ## Code package examples
 
