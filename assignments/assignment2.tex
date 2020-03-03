@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\begin{document}
+\begin{center}
+{\bf \LARGE AST3100 ``Code development and packaging mini-course'' Assignment 2}\\[7pt]
+\emph{Due on Mar. 10 2020  at the start of class}\\[7pt]
+\end{center}
+
+The purpose of this second assignment is to start the documentation of
+ the Python package that you are creating as part of this course.\\
+
+\noindent{\bf Task 1: Write docstrings for your code} Write
+numpy-style docstrings for at least a few functions, classes, and
+methods in your package (remember that your package should contain a
+few functions and classes and the classes should have a few methods).\\
+
+\noindent{\bf Task 2: Set up the \texttt{sphinx} outline of your
+  documentation} Make a \texttt{docs/} directory in your code package's top-level directory, enter the directory, and run\\
+
+\texttt{sphinx-quickstart}\\
+
+Answer the questions and then you should end up with the basic outline
+of the sphinx documentation for your package. Render the HTML version
+of your documentation and navigate to it in a browser to make sure
+that it works.\\
+
+\noindent{\bf Task 3: Write an installation page and a quick-start
+  guide in reStructuredText} and also include them in your main
+\texttt{toctree}. Render the documentation again and make sure that
+all is well.\\
+
+\noindent{\bf Task 4: Create a simple API for your code} Using the
+\texttt{autodoc} extension, write an API page that list the docstrings
+for all functions, classes, and their public methods.\\
+
+\noindent{\bf Task 5: Add a simple tutorial \texttt{jupyter notebook}}
+Install the \texttt{nbsphinx} extension and use it to include the
+notebook as a documentation page. Render as HTML and make sure that it
+works.\\
+
+We will discuss next week how to setup \texttt{readthedocs.io} to
+automatically build and share your documentation.
+\end{document}
