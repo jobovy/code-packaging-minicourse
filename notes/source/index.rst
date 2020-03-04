@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Code development and packaging
-==============================
+Python code packaging for scientific software
+=============================================
 
 By `Jo Bovy <http://astro.utoronto.ca/~bovy>`__
 

@@ -60,6 +60,10 @@ exclude_patterns = ['.ipynb_checkpoints/*']
 
 # -- Options for HTML output -------------------------------------------------
 
+html_title= "Python code packaging for scientific software"
+
+html_use_index= False
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
