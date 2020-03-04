@@ -19,6 +19,11 @@ help:
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
+latexpdf: Makefile
+	mkdir -p build/latex
+	cp "$(SOURCEDIR)/package.png" "$(BUILDDIR)/latex"
+	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
 html: Makefile
 	- bash -c ' (make latexpdf LATEXMKOPTS="-f" LATEXOPTS="-f -interaction=nonstopmode" PAPER="letter") || echo itsallfine '
 	mkdir -p build/html/pdf

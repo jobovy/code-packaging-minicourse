@@ -78,3 +78,52 @@ html_favicon = 'package.ico'
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 html_logo = 'package.png'
+
+# -- Options for LaTeX output -------------------------------------------------
+
+latex_documents= [
+  ('index', 'code-packaging-minicourse.tex',
+   u'Python code packaging for scientific software',
+   u'Jo Bovy', 'manual',True),
+]
+
+latex_show_pagerefs= True
+
+latex_elements = {
+# The paper size ('letterpaper' or 'a4paper').
+'papersize': 'letterpaper',
+
+# The font size ('10pt', '11pt' or '12pt').
+'pointsize': '12pt',
+
+# Additional stuff for the LaTeX preamble.
+'preamble': r"""
+\usepackage{xcolor}
+\definecolor{faintyellow}{HTML}{FBFBF5}
+
+\newcommand{\githash}{"""
++"{}".format(git_hash)
++r"""}
+""",
+
+# Title page
+'maketitle': r"""
+\makeatletter
+\begin{titlepage}
+\pagecolor{faintyellow}
+\vspace*{9em}
+{\raggedright\huge\texttt{Python code packaging for\par}\\
+{\raggedleft\huge\texttt{scientific software}\par}
+\vspace{1em}\centering{\includegraphics[width=0.25\textwidth]{package.png}}\\
+\vspace{3em}
+{\large\scshape Jo Bovy\\ (University of Toronto)\par}
+\vspace{0.5em}
+{(Last updated \today; rev. \githash)\vfill\par}
+\end{titlepage}
+\makeatother
+\nopagecolor
+""",
+
+# No index
+'printindex': '',
+}
