@@ -121,8 +121,8 @@ latex_elements = {
 \vspace{1em}\centering{\includegraphics[width=0.25\textwidth]{package.png}}\\
 \vspace{3em}
 {\large\scshape Jo Bovy\\ (University of Toronto)\par}
-\vspace{0.5em}
-{(Last updated \today; rev. \githash)\vfill\par}
+\vspace{2.5em}
+{Last updated \today; rev. \githash\vfill\par}
 \end{titlepage}
 \makeatother
 \nopagecolor
