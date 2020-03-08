@@ -18,7 +18,6 @@
 # -- Project information -----------------------------------------------------
 
 project = 'code-packaging-minicourse'
-copyright = '2020, Jo Bovy'
 author = 'Jo Bovy'
 # Also get the git hash for the current revision
 try:
@@ -43,8 +42,15 @@ try:
     if out:
         git_time= time.strftime('%B %d, %Y',
                                 time.strptime(out.decode().strip()))
+        git_year= time.strftime('%Y',
+                                time.strptime(out.decode().strip()))
 except Exception:
     pass
+
+if int(git_year) > 2020:
+    copyright = '2020-{git_year}, Jo Bovy'.format(git_year=git_year)
+else:
+    copyright = '2020, Jo Bovy'
 
 rst_epilog = """
 .. |gitHash| replace:: {githash}
