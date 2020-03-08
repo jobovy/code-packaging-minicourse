@@ -8,7 +8,7 @@ Python code packaging for scientific software
 
 By `Jo Bovy <http://astro.utoronto.ca/~bovy>`__
 
-(last updated |today|; rev. |gitHash|)
+(last changed |gitTime|, rev. |gitHash|; last built |today|)
 
 This is a brief set of notes with an overview of the steps involved in
 developing, publishing, and maintaining a scientific software

@@ -31,11 +31,31 @@ try:
 except Exception:
     pass
 
+# Get the date for the last commit (not necessarily today)
+import time
+try:
+    import subprocess
+    p = subprocess.Popen(['git','log','-1',
+                          '--date=format:%a %b %d %H:%M:%S %Y',
+                          '--format=%ad'],
+                         stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out, err = p.communicate()
+    if out:
+        git_time= time.strftime('%B %d, %Y',
+                                time.strptime(out.decode().strip()))
+except Exception:
+    pass
+
 rst_epilog = """
 .. |gitHash| replace:: {githash}
+.. |gitTime| replace:: {gittime}
 """.format(
     githash = git_hash,
+    gittime = git_time,
     )
+
+# To make sure that |today| is consistent with |gitTime| in format
+today_fmt= '%B %d, %Y'
 
 # -- General configuration ---------------------------------------------------
 
@@ -108,6 +128,12 @@ latex_elements = {
 \newcommand{\githash}{"""
 +"{}".format(git_hash)
 +r"""}
+\newcommand{\gittime}{"""
++"{}".format(git_time)
++r"""}
+\newcommand{\mytoday}{"""
++"{}".format(time.strftime('%B %d, %Y',time.localtime()))
++r"""}
 """,
 
 # Title page
@@ -121,8 +147,11 @@ latex_elements = {
 \vspace{1em}\centering{\includegraphics[width=0.25\textwidth]{package.png}}\\
 \vspace{3em}
 {\large\scshape Jo Bovy\\ (University of Toronto)\par}
-\vspace{2.5em}
-{Last updated \today; rev. \githash\vfill\par}
+\vspace{6.5em}
+{Rev. \githash}\\
+{Last changed \gittime}\\
+{Last built \mytoday\vfill\par}
+%{Last changed \gittime, rev. \githash; last built \mytoday\vfill\par}
 \end{titlepage}
 \makeatother
 \nopagecolor
