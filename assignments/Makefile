@@ -1,4 +1,4 @@
-all: assignment1.pdf assignment2.pdf
+all: assignment1.pdf assignment2.pdf assignment3.pdf
 
 %.pdf: %.tex
 	pdflatex $<
@@ -16,3 +16,4 @@ clean:
 spotless: clean
 	$(RM) assignment1.pdf
 	$(RM) assignment2.pdf
+	$(RM) assignment3.pdf

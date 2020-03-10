@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\begin{document}
+\begin{center}
+{\bf \LARGE AST3100 ``Code development and packaging mini-course'' Assignment 3}\\[7pt]
+\emph{Due on Mar. 17 2020  at the start of class}\\[7pt]
+\end{center}
+
+The purpose of this third assignment is to build a test suite for the
+Python package that you are creating as part of this course, run it
+with \texttt{pytest}, and set it up to run automatically on
+\texttt{Travis CI}. Write your tests in a \texttt{tests/}
+sub-directory of your top-level directory as discussed in the notes.\\
+
+\noindent{\bf Task 1: Write tests for your code that check that in
+  cases where you know the answer, your code returns the correct
+  answer} Do this for some of the functions and methods in your
+package. If you think that none of the functions in your package have
+a known solution, then you need to think hard (because there probably
+is one) or re-design your package such that it consists of functions
+for which some known solutions exist.\\
+
+\noindent{\bf Task 2: Write tests for your code that check that the
+  outputs that your functions and methods provide are consistent with
+  known properties of the outputs} Even if you don't know the answer,
+what property do you expect the output to have? This can be as simple
+as checking the expected range of the output, or that the output
+satisfies some constraints.\\
+
+\noindent{\bf Task 3: Install \texttt{coverage.py} and run your tests
+  with \texttt{coverage} and \texttt{pytest} to determine the test
+  coverage of your test suite} following the steps given in the notes.\\
+
+\noindent{\bf Task 4: Setup your project on \texttt{Travis CI} and run
+  the build-and-test integration automatically} Write a
+\texttt{.travis.yml} file that installs all dependencies (with
+\texttt{pip} if you can), installs your code, and runs the test suite,
+displaying the test coverage.\\
+
+\noindent{\bf Task 5: Use Miniconda on \texttt{Travis CI} to install
+  dependencies} and run again.\\
+
+\noindent{\bf Task 6 (extra credit): Setup your project on
+  \texttt{AppVeyor} and run the build-and-test integration
+  automatically} by writing a \texttt{.appveyor.yml} file and adding
+it to your repository.\\
+
+\end{document}
