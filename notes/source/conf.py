@@ -140,6 +140,9 @@ latex_elements = {
 \newcommand{\mytoday}{"""
 +"{}".format(time.strftime('%B %d, %Y',time.localtime()))
 +r"""}
+
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 """,
 
 # Title page
