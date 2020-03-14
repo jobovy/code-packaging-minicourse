@@ -61,7 +61,7 @@ rst_epilog = """
     )
 
 # To make sure that |today| is consistent with |gitTime| in format
-today_fmt= '%B %d, %Y'
+today= "{}".format(time.strftime('%B %d, %Y',time.localtime()))
 
 # -- General configuration ---------------------------------------------------
 
