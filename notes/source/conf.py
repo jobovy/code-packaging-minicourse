@@ -94,6 +94,30 @@ nbsphinx_prompt_width= 0.
 
 nbsphinx_prolog = r"""
 
+.. only:: html
+
+   .. raw:: html
+      
+      <style>
+      div.nbinput.container div.prompt,
+      div.nboutput.container div.prompt {
+       min-width: %(nbsphinx_prompt_width)s;
+       padding-top: 0.3rem;
+       padding-right: 0px;
+       text-align: right;
+       flex: 0;
+      }
+      div.nbinput.container div.input_area {
+        border-color: #0c4762;
+        border-style: dotted;
+        border-width: thin;
+        border-radius: 0px;
+        background-color: #f0f0f0;
+      }
+      </style>
+
+"""
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
