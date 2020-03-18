@@ -90,6 +90,10 @@ html_title= "Python code packaging for scientific software"
 
 html_use_index= False
 
+nbsphinx_prompt_width= 0.
+
+nbsphinx_prolog = r"""
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
