@@ -22,7 +22,10 @@ help:
 latexpdf: Makefile
 	mkdir -p build/latex
 	cp "$(SOURCEDIR)/package.png" "$(BUILDDIR)/latex"
-	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	- bash -c ' (make latex LATEXMKOPTS="-f" LATEXOPTS="-f -interaction=nonstopmode" PAPER="letter") || echo itsallfine '
+	sed 's/\\llap{\\color{nbsphinxin}\[[0-9]*\]:\\,\\hspace{\\fboxrule}\\hspace{\\fboxsep}}//g' build/latex/code-packaging-minicourse.tex > tmp
+	mv tmp build/latex/code-packaging-minicourse.tex
+	make -C build/latex code-packaging-minicourse.pdf LATEXMKOPTS="-f" LATEXOPTS="-f -interaction=nonstopmode" PAPER="letter"
 
 html: Makefile
 	- bash -c ' (make latexpdf LATEXMKOPTS="-f" LATEXOPTS="-f -interaction=nonstopmode" PAPER="letter") || echo itsallfine '
