@@ -1,4 +1,3 @@
 sphinx
-pandoc
 nbsphinx
 sphinx-copybutton
