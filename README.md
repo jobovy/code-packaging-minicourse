@@ -1,5 +1,6 @@
 # code-packaging-minicourse
-Materials related to the graduate mini-course on code development and packaging at the University of Toronto
+
+Materials related to a mini-course on code development and packaging.
 
 ## Table of Contents
 
@@ -11,7 +12,7 @@ Materials related to the graduate mini-course on code development and packaging 
 
 ## Logistics
 
-* **Meeting time / room**: Tue/Fri 11:10 - 12:30pm / AB 113; meetings on Feb. 25, Mar. 3, Mar. 10, Mar. 24, and a TBD date.
+* **Meeting time / room**: Tue/Fri 11:10 - 12:30pm / AB 113; meetings on Feb. 25, Mar. 3, Mar. 10, Mar. 17, and Mar. 24
 
 * **Instructor**: Jo Bovy, AB229
 
@@ -60,6 +61,4 @@ As part of this course, you will develop a scientific software package, learning
 * A *package for inspecting the cosmic history of star formation and stellar mass growth*: implement the results from [Behroozi et al. (2012)](https://arxiv.org/abs/1207.6105), available [at the bottom of this page](https://www.peterbehroozi.com/data.html). For example, implement the stellar-mass vs. halo-mass relations and allow them to be evaluated at any redshift/halo mass using interpolation.
 
 Whichever example you choose or when you bring your own package, it's important that your package implements both classes and functions so we can learn about documentation and testing features for both of these.
-
-
 
