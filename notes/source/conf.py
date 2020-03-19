@@ -114,6 +114,11 @@ nbsphinx_prolog = r"""
         border-radius: 0px;
         background-color: #f0f0f0;
       }
+
+      /* hide copybtn icon on output area */
+      .nboutput a.copybtn {
+        display: none;
+      }
       </style>
 
 """
