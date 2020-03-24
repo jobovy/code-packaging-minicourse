@@ -36,13 +36,15 @@ A set of lecture notes will be sent to students taking the class by email; these
 
 ## Lecture slides
 
-* **Week 1**: [slides](http://astro.utoronto.ca/~bovy/codepackagingminicourse/L1-codingmini.pdf)
+* **Week 1**: [slides](http://astro.utoronto.ca/~bovy/codepackagingminicourse/L1-codingmini.pdf): course logistics, why packaging and releasing your code, intro to git and GitHub, basic Python structure.
 
-* **Week 2**: [slides](http://astro.utoronto.ca/~bovy/codepackagingminicourse/L2-codingmini.pdf)
+* **Week 2**: [slides](http://astro.utoronto.ca/~bovy/codepackagingminicourse/L2-codingmini.pdf): documentation.
 
-* **Week 3**: [slides](http://astro.utoronto.ca/~bovy/codepackagingminicourse/L3-codingmini.pdf)
+* **Week 3**: [slides](http://astro.utoronto.ca/~bovy/codepackagingminicourse/L3-codingmini.pdf): testing your code, test coverage, continuous integration.
 
-* **Week 4**: [slides](http://astro.utoronto.ca/~bovy/codepackagingminicourse/L4-codingmini.pdf)
+* **Week 4**: [slides](http://astro.utoronto.ca/~bovy/codepackagingminicourse/L4-codingmini.pdf): releasing your package, hosting documentation on readthedocs.io.
+
+* **Week 5**: [slides](http://astro.utoronto.ca/~bovy/codepackagingminicourse/L5-codingmini.pdf): GitHub Actions, badges, C extensions.
 
 ## Code package examples
 
