@@ -12,7 +12,7 @@ Materials related to a mini-course on code development and packaging.
 
 ## Logistics
 
-* **Meeting time / room**: Tue/Fri 11:10 - 12:30pm / AB 113; meetings on Feb. 25, Mar. 3, Mar. 10, Mar. 17, and Mar. 24
+* **Meeting time / room**: Tue 10:30am - 12pm / AB 113; meetings on Feb. 25, Mar. 3, Mar. 10, Mar. 17, and Mar. 24
 
 * **Instructor**: Jo Bovy, AB229
 
