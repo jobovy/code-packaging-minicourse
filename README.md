@@ -32,7 +32,7 @@ Materials related to a mini-course on code development and packaging.
 
 ## Lecture notes
 
-A set of lecture notes will be sent to students taking the class by email; these will appear here at the end of the class.
+A set of lecture notes is available at [https://pythonpackaging.info](https://pythonpackaging.info).
 
 ## Lecture slides
 
