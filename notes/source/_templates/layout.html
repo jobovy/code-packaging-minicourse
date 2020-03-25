@@ -1,7 +1,7 @@
 {% extends "!layout.html" %}
 
 {%- block htmltitle %}
-    <title>{{ title }}</title>
+    <title>{{ title|striptags|e }} ({{ shorttitle|striptags|e }})</title>
 {%- endblock %}
 
 {%- block haikuheader %}
@@ -13,7 +13,7 @@
     {%- if logo -%}
       <img class="rightlogo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
     {%- endif -%}
-    <h1 class="heading"><span>{{ title|striptags|e }}</span></h1>
+    <h1 class="heading"><span>{{ shorttitle|striptags|e }}</span></h1>
     {%- endif %}
 {%- endblock %}
 
