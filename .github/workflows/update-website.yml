@@ -37,12 +37,14 @@ jobs:
         shell: bash -l {0}
         working-directory: notes
         run: make html
-      # Setup SSH agent
-      - uses: webfactory/ssh-agent@v0.2.0
+      # Push to Amazon S3
+      - name: Upload website
+        uses: jakejarvis/s3-sync-action@v0.5.1
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-      # Upload to lepus
-      - name: Upload
-        shell: bash -l {0}
-        working-directory: notes
-        run: rsync -e"ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" -azv build/html/ bovy@lepus.astro.utoronto.ca:/home/bovy/web/codepackagingminicourse/notes/
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'us-east-2'
+          SOURCE_DIR: 'build/html'      # optional: defaults to entire repository
