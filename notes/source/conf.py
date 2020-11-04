@@ -214,3 +214,9 @@ full license terms).  \clearpage
 # No index
 'printindex': '',
 }
+
+# -- Options for linkcheck output ---------------------------------------------
+
+linkcheck_ignore = [
+    'index.html','pdf/code-packaging-*.pdf'
+]
