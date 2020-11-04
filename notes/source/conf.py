@@ -218,5 +218,5 @@ full license terms).  \clearpage
 # -- Options for linkcheck output ---------------------------------------------
 
 linkcheck_ignore = [
-    'index.html','pdf/code-packaging-*.pdf'
+    'index.html','pdf/code-packaging-'
 ]
