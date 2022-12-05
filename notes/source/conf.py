@@ -217,6 +217,9 @@ full license terms).  \clearpage
 
 # -- Options for linkcheck output ---------------------------------------------
 
+# Don't verify SSL certificates, just check that links exist
+tls_verify = False
+
 linkcheck_ignore = [
     'index.html','pdf/code-packaging-','https://sourceforge.net/'
 ]
