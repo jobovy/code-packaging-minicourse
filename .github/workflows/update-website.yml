@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: 3.8
       - name: Set up pandoc
-        uses: r-lib/actions/setup-pandoc@v1
+        uses: r-lib/actions/setup-pandoc@v2
       - name: Install LaTeX
         shell: bash -l {0}
         run: |
