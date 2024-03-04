@@ -221,5 +221,5 @@ full license terms).  \clearpage
 tls_verify = False
 
 linkcheck_ignore = [
-    'index.html','pdf/code-packaging-','https://sourceforge.net/'
+    'index.html','pdf/code-packaging-','https://sourceforge.net/', ' https://stackoverflow.com/'
 ]
