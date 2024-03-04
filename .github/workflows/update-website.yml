@@ -3,6 +3,7 @@ name: Update website
 # Update on every push
 on:
   push:
+  pull_request:
   schedule:
     - cron: '0 11 4 * *'
 
@@ -43,6 +44,7 @@ jobs:
         run: make html
       # Push to Amazon S3
       - name: Upload website
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: jakejarvis/s3-sync-action@v0.5.1
         with:
           args: --acl public-read --follow-symlinks --delete
