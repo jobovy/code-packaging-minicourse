@@ -225,5 +225,7 @@ linkcheck_ignore = [
     'pdf/code-packaging-',
     'https://sourceforge.net/',
     'https://stackoverflow.com/',
-    'https://opensource.org/licenses'
+    'https://opensource.org/licenses',
+    'https://pastebin.com',
+    'https://www.gnu.org/software/gsl/'
 ]
