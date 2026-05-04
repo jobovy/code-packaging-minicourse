@@ -14,6 +14,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import urllib3
 
 # -- Project information -----------------------------------------------------
 
@@ -216,6 +217,10 @@ full license terms).  \clearpage
 }
 
 # -- Options for linkcheck output ---------------------------------------------
+
+# Issues with SSL certificates
+# This silences the InsecureRequestWarning specifically
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Don't verify SSL certificates, just check that links exist
 tls_verify = False
