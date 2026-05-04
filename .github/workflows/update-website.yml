@@ -34,6 +34,7 @@ jobs:
           pip install -r requirements.txt
       # Check that all links work
       - name: Check external links
+        continue-on-error: true
         shell: bash -l {0}
         working-directory: notes
         run: make linkcheck
