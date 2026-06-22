@@ -73,8 +73,8 @@ extensions = ["nbsphinx","sphinx.ext.extlinks","sphinx_copybutton",
               "sphinx.ext.mathjax"]
 
 # Link to PDF version that includs the git hash
-extlinks = {'pdf_link': ('pdf/code-packaging-rev{}.pdf'.format(git_hash),
-                         'PDF version')}
+extlinks = {'pdf_link': ('pdf/code-packaging-rev{}.pdf%s'.format(git_hash),
+                         'PDF version%s')}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

@@ -1,4 +1,4 @@
 ipython
-sphinx==4.0.2
+sphinx>=7.4,<8
 nbsphinx
 sphinx-copybutton
